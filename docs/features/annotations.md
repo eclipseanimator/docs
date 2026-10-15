@@ -1,5 +1,5 @@
 ---
-icon: lucide/pencil
+icon: lucide/line-squiggle
 tags:
   - Feature
 ---
