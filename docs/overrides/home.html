@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block container %}
+<style>
+    .md-header:not(.md-header--shadow) {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
+    .eclipse-hero {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        text-align: center;
+        
+        height: 100vh;
+        margin-top: calc(-1.5rem + -2.4rem);
+
+        /* tap strip needs to be accounted for to prevent jumps/oversizing */
+        @media (width >= 1220px) {
+            margin-top: calc(-1.5rem + -4.8rem);
+        }
+
+        & > div {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & h1 {
+                margin: 0;
+            }
+        }
+    }
+
+    .eclipse-section {
+        width: 100%;
+
+        & video {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            filter: blur(0.25rem) brightness(0.25);
+            object-fit: cover;
+        }
+    }
+</style>
+<section class="eclipse-section">
+    <video autoplay muted loop oncontextmenu="return false">
+        <source src="/assets/trailer.webm" type="video/webm" />
+    </video>
+    <div class="eclipse-hero md-typeset">
+        <div>
+            <h1>{{ config.site_description }}</h1>
+            <p>Eclipse Animator is a new generation of animation tooling, built to be flexible and work for you, not against you.</p>
+            <a href="{{ page.next_page.url | url }}"
+               title="{{ page.next_page.title | e }}"
+               class="md-button md-button--primary">
+                {{ page.next_page.title | e }}
+            </a>
+         </div>
+    </div>
+</section>
+{% endblock %}

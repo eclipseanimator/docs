@@ -1,0 +1,14 @@
+.md-header {
+	color: var(--md-default-fg-color);
+	background-color: initial;
+
+	box-shadow: none;
+}
+
+.md-tabs {
+    box-shadow: none;
+}
+
+.md-typeset [data-preview]:after {
+    content: none;
+}

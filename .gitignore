@@ -1,0 +1,5 @@
+# python virtualenv
+.venv/
+
+# built site
+site/
