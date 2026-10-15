@@ -1,6 +1,10 @@
 ---
 icon: lucide/package-open
+tags:
+  - Guide
 ---
+
+!!! workshop "This part of the documentation is currently under construction."
 
 Eclipse Animator is a modern animation plugin for Roblox, providing a vast featureset that any animator, no matter what
 type of animation they are making, will have support from their tooling.

@@ -12,7 +12,30 @@ edit_uri = "edit/main/docs/"
 
 nav = [
   { "Home" = "index.md" },
-  { "Get started" = "get-started/index.md" },
+  { "Get Started" = "get-started.md" },
+  { "Features" = [
+      "features/index.md",
+      "features/annotations.md",
+      "features/blender-tools.md",
+      "features/camera-tools.md",
+      "features/cinematic-effects.md",
+      "features/graph-editor.md",
+      "features/kinematics.md",
+      "features/layers.md",
+      "features/live-collab.md",
+      "features/motion-paths.md",
+      "features/onion-skinning.md",
+      "features/physics.md",
+      "features/unparenting.md",
+  ] },
+  { "Guides" = [
+      "guides/index.md",
+      { "Migrating" = [
+          "guides/migrating/roblox.md",
+          "guides/migrating/moon-animator.md",
+          "guides/migrating/blender.md",
+      ] },
+  ] },
   { "Addons" = [
       "addons/blender.md",
       "addons/video.md"
@@ -82,6 +105,15 @@ link = "https://discord.gg/eclipseanimator"
 # [[project.extra.social]]
 # icon = "fontawesome/brands/mastodon"
 # link = "https://fosstodon.org/@user"
+
+[project.extra.status]
+new = "Recently added"
+
+[project.plugins.tags]
+
+[project.extra.tags]
+Feature = "feature"
+Guide = "guide"
 
 [project.markdown_extensions]
 abbr = {}
