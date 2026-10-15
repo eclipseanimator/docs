@@ -1,7 +1,6 @@
 ---
 icon: simple/blender
-tags:
-  - Guide
+description: Migrate away from Blender.
 ---
 
 !!! workshop "This part of the documentation is currently under construction."

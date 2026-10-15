@@ -1,7 +1,6 @@
 ---
 icon: material/gymnastics
-tags:
-  - Feature
+description: Built-in kinematics solving.
 ---
 
 !!! workshop "This part of the documentation is currently under construction."

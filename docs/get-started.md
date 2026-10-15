@@ -1,5 +1,6 @@
 ---
 icon: lucide/package-open
+description: Begin your journey with Eclipse Animator here.
 tags:
   - Guide
 ---

@@ -51,7 +51,7 @@ extra_css = ["stylesheets/extra.css"]
 
 [project.theme]
 # variant = "classic"
-custom_dir = "docs/overrides"
+custom_dir = "overrides"
 favicon = "docs/assets/logo.png"
 language = "en"
 features = [
@@ -153,3 +153,9 @@ pymdownx.tilde = {}
 targets.include = [
     "*"
 ]
+
+[project.plugins.meta]
+
+[project.plugins.social]
+cards_layout = "social_card"
+debug = true

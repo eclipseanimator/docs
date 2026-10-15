@@ -1,8 +1,7 @@
 ---
 title: Cinematic Effects
 icon: lucide/clapperboard
-tags:
-  - Feature
+description: Add various cinematic effects to your animations to make them pop.
 ---
 
 !!! workshop "This part of the documentation is currently under construction."

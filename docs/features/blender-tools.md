@@ -1,8 +1,7 @@
 ---
 title: Blender Tools
 icon: simple/blender
-tags:
-  - Feature
+description: Bring some familiar controls and gizmos in from Blender.
 ---
 
 !!! workshop "This part of the documentation is currently under construction."

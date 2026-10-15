@@ -1,8 +1,7 @@
 ---
 title: Moon Animator 2
 icon: lucide/moon
-tags:
-  - Guide
+description: Migrate away from Moon Animator 2.
 ---
 
 !!! workshop "This part of the documentation is currently under construction."
