@@ -158,4 +158,3 @@ targets.include = [
 
 [project.plugins.social]
 cards_layout = "social_card"
-debug = true
