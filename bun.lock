@@ -10,6 +10,7 @@
         "@tailwindcss/vite": "^4.3.3",
         "astro": "^7.2.10",
         "sharp": "^0.35.3",
+        "starlight-auto-sidebar": "^0.4.1",
         "tailwindcss": "^4.3.3",
       },
     },
@@ -674,6 +675,8 @@
     "source-map-js": ["source-map-js@1.2.2", "", {}, "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw=="],
 
     "space-separated-tokens": ["space-separated-tokens@2.0.2", "", {}, "sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q=="],
+
+    "starlight-auto-sidebar": ["starlight-auto-sidebar@0.4.1", "", { "dependencies": { "github-slugger": "^2.0.0" }, "peerDependencies": { "@astrojs/starlight": ">=0.39.0" } }, "sha512-dq/3NjJXxR19ke7LPZjC8PlDqPkEzg0G6QqE4pRMH3eI2EZFQiuafARWpP81ZIAY7tdr6lxscNWTvOu5WhaZwQ=="],
 
     "std-env": ["std-env@4.3.0", "", {}, "sha512-OtU/EgQ1kIm5KwqQpBC6ZEMXrZRui11w8zgfTWp8cdO9B8OaPsbA8bTHO2P+HNo1VlUTGMVBwPhydu6poeXiag=="],
 

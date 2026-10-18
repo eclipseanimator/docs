@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 import tailwindcss from "@tailwindcss/vite";
+import starlightAutoSidebar from "starlight-auto-sidebar";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,17 +23,25 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
+					label: "Features",
+					items: [
+					  { autogenerate: { directory: "features" } }
+					],
+        },
+        {
 					label: "Guides",
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: "Example Guide", slug: "guides/example" },
+					  { autogenerate: { directory: "guides" } }
+					],
+        },
+        {
+					label: "Addons",
+					items: [
+					  { autogenerate: { directory: "addons" } }
 					],
 				},
-				{
-					label: "Reference",
-					items: [{ autogenerate: { directory: "reference" } }],
-				},
-			],
+      ],
+			plugins: [starlightAutoSidebar()]
 		}),
 	],
 
