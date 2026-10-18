@@ -9,6 +9,16 @@
 @theme {
 	--font-mono: "Roboto Mono Variable", monospace;
 	--font-sans: "Roboto Variable", sans-serif;
+
+	--color-gray-100: rgb(236, 229, 243);
+	--color-gray-200: rgb(199.437, 192.813, 208.688);
+	--color-gray-300: rgb(162.875, 156.625, 174.375);
+	--color-gray-400: rgb(126.313, 120.438, 140.063);
+	--color-gray-500: rgb(89.75, 84.25, 105.75);
+	--color-gray-600: rgb(53.187, 48.062, 71.437);
+	--color-gray-700: rgb(36, 31.75, 53.25);
+	--color-gray-800: rgb(28.5, 25.375, 43.125);
+	--color-gray-900: rgb(21, 19, 33);
 }
 
 @layer theme {
@@ -16,7 +26,13 @@
 		@apply font-sans;
 	}
 
-	h1, h2, h3, h4, h5, h6, .group-label {
-	    @apply font-mono;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	.group-label {
+		@apply font-mono;
 	}
 }
