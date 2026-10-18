@@ -4,11 +4,16 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 @import "@fontsource-variable/roboto-mono";
-@import "@fontsource-variable/roboto";
+@import "@fontsource-variable/roboto-flex";
 
 @theme {
 	--font-mono: "Roboto Mono Variable", monospace;
-	--font-sans: "Roboto Variable", sans-serif;
+	--font-sans: "Roboto Flex Variable", sans-serif;
+
+	--color-accent-200: rgb(232, 180, 242);
+	--color-accent-600: rgb(198.6, 101.733, 213);
+	--color-accent-900: rgb(109.8, 50.533, 117);
+	--color-accent-950: rgb(95, 42, 101);
 
 	--color-gray-100: rgb(236, 229, 243);
 	--color-gray-200: rgb(199.437, 192.813, 208.688);
@@ -19,6 +24,18 @@
 	--color-gray-700: rgb(36, 31.75, 53.25);
 	--color-gray-800: rgb(28.5, 25.375, 43.125);
 	--color-gray-900: rgb(21, 19, 33);
+
+	--color-sl-accent-low: var(--sl-color-accent-low);
+	--color-sl-accent: var(--sl-color-accent);
+	--color-sl-accent-high: var(--sl-color-accent-high);
+	--color-sl-white: var(--sl-color-white);
+	--color-sl-gray-1: var(--sl-color-gray-1);
+	--color-sl-gray-2: var(--sl-color-gray-2);
+	--color-sl-gray-3: var(--sl-color-gray-3);
+	--color-sl-gray-4: var(--sl-color-gray-4);
+	--color-sl-gray-5: var(--sl-color-gray-5);
+	--color-sl-gray-6: var(--sl-color-gray-6);
+	--color-sl-black: var(--sl-color-black);
 }
 
 @layer theme {
@@ -34,5 +51,22 @@
 	h6,
 	.group-label {
 		@apply font-mono;
+	}
+
+	.hero {
+		grid-template-columns: 1fr !important;
+	}
+
+	.hero .stack,
+	.hero .copy {
+		@apply items-center text-center justify-center;
+	}
+
+	.hero .actions {
+		@apply gap-2;
+	}
+
+	.sl-link-button {
+		@apply px-3 py-2 rounded-lg flex-row-reverse;
 	}
 }

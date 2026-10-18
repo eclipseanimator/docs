@@ -46,6 +46,7 @@ export default defineConfig({
 			plugins: [starlightAutoSidebar()],
 
 			components: {
+				PageTitle: "./src/components/PageTitle.astro",
 				Header: "./src/components/Header.astro",
 			},
 

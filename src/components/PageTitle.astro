@@ -1,0 +1,19 @@
+---
+// FUCK YOU ASTRO
+// -brooke
+const { title, pageTitle } = Astro.locals.starlightRoute.entry.data;
+---
+
+{pageTitle ? (
+	<h1 id="_top" class="mt-4 text-4xl leading-12 font-semibold text-sl-white">
+		{title}
+	</h1>
+) : (
+	<span class="no-page-title" hidden />
+)}
+
+<style is:global>
+	.content-panel:has(.no-page-title) {
+		display: none;
+	}
+</style>
