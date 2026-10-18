@@ -2,11 +2,17 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
 			title: "Eclipse Animator",
+			components: {
+				Header: "./src/components/Header.astro",
+			},
+			customCss: ["./src/styles/global.css"],
 			social: [
 				{
 					icon: "github",
@@ -29,4 +35,8 @@ export default defineConfig({
 			],
 		}),
 	],
+
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });

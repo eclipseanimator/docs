@@ -1,0 +1,16 @@
+@layer base, starlight, theme, components, utilities;
+
+@import "@astrojs/starlight-tailwind";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "@fontsource-variable/roboto-mono";
+
+@theme {
+	--font-mono: "Roboto Mono Variable", monospace;
+}
+
+@layer theme {
+	body {
+		@apply font-mono;
+	}
+}
