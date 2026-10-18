@@ -7,6 +7,7 @@ import starlightAutoSidebar from "starlight-auto-sidebar";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://eclipseanimator.com",
 	integrations: [
 		starlight({
 			title: "Eclipse Animator",
