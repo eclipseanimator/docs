@@ -6,7 +6,7 @@
       "dependencies": {
         "@astrojs/starlight": "^0.42.6",
         "@astrojs/starlight-tailwind": "^5.0.0",
-        "@fontsource-variable/roboto": "^5.3.0",
+        "@fontsource-variable/roboto-flex": "^5.3.0",
         "@fontsource-variable/roboto-mono": "^5.3.0",
         "@tailwindcss/vite": "^4.3.3",
         "astro": "^7.2.10",
@@ -105,7 +105,7 @@
 
     "@expressive-code/plugin-text-markers": ["@expressive-code/plugin-text-markers@0.44.2", "", { "dependencies": { "@expressive-code/core": "^0.44.2" } }, "sha512-SNI7EgUSiADqbqUzzMbj1ZeC/r2pa5eg3KyFOGAd3a7EsIA4qzjXQLp+ODWQtHVDKFCdGs4J3ovSJUqvKIK96g=="],
 
-    "@fontsource-variable/roboto": ["@fontsource-variable/roboto@5.3.0", "", {}, "sha512-BoaaZiQf8fgtxv07KXkTwx1bKz/EoqIlTXq2OOKKXINxp6qXWdnlChqV+hSaDANS49yyUASFl3OVBMMDTCIHFA=="],
+    "@fontsource-variable/roboto-flex": ["@fontsource-variable/roboto-flex@5.3.0", "", {}, "sha512-bOxckUy0qXNRjhV6e4pcHGSvptix4ZRD1uaj5Za8h+p3qrb2GL4U4TQdpVmPSy0SmqwldfD+JJqEKdF68EyiAw=="],
 
     "@fontsource-variable/roboto-mono": ["@fontsource-variable/roboto-mono@5.3.0", "", {}, "sha512-h5r+KY/6qy8JEOj33JgcrFO81YAnvrc1EAwMpl/EPJLb2OIvOy0/jmB5M7qs7x/uXk5JUP5Ux4LrkeOK7faHkQ=="],
 
