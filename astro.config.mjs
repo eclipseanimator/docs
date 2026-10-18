@@ -22,12 +22,6 @@ export default defineConfig({
 				},
 			],
 			sidebar: [
-				{
-					label: "Features",
-					items: [
-					  { autogenerate: { directory: "features" } }
-					],
-        },
         {
 					label: "Guides",
 					items: [
@@ -35,11 +29,23 @@ export default defineConfig({
 					],
         },
         {
-					label: "Addons",
+          label: "Tutorials",
+          items: [
+            { autogenerate: { directory: "tutorials" } }
+          ],
+        },
+        {
+					label: "Migrating",
 					items: [
-					  { autogenerate: { directory: "addons" } }
+					  { autogenerate: { directory: "migrating" } }
 					],
-				},
+        },
+        {
+          label: "API Reference",
+          items: [
+            { autogenerate: { directory: "reference" } }
+          ]
+				}
       ],
 			plugins: [starlightAutoSidebar()]
 		}),

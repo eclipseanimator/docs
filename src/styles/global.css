@@ -4,13 +4,19 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 @import "@fontsource-variable/roboto-mono";
+@import "@fontsource-variable/roboto";
 
 @theme {
 	--font-mono: "Roboto Mono Variable", monospace;
+	--font-sans: "Roboto Variable", sans-serif;
 }
 
 @layer theme {
 	body {
-		@apply font-mono;
+		@apply font-sans;
+	}
+
+	h1, h2, h3, h4, h5, h6, .group-label {
+	    @apply font-mono;
 	}
 }
