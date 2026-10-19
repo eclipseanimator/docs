@@ -1,0 +1,49 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import Image from "astro/components/Image.astro";
+import Wave from "@/assets/wave.png";
+
+const NUM_WAVES = 8;
+const WAVE_INDICES = new Array(NUM_WAVES);
+for (let i = 1; i <= NUM_WAVES; i++) WAVE_INDICES.push(i);
+---
+
+<StarlightPage
+	frontmatter={{
+		title: "Eclipse Animator",
+		description:
+			"Meet Eclipse Animator: a modern Roblox animation suite, built to \
+			be flexible with you, not against you.",
+		template: "splash",
+		hero: {
+			title: "Animation Reimagined",
+			actions: [
+				{
+					text: "Purchase on Roblox",
+					link: "/getting-started/",
+					icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md --><path fill="currentColor" d="M18.926 23.998L0 18.892L5.075.002L24 5.108ZM15.348 10.09l-5.282-1.453l-1.414 5.273l5.282 1.453z"/></svg>`,
+				},
+				{
+					text: "Documentation",
+					link: "/guides/getting-started/example",
+					icon: "open-book",
+					variant: "minimal",
+				},
+			],
+		},
+	}}
+>
+	<div class="absolute left-0 top-0 -z-1 grid grid-cols-8 w-full">
+		{WAVE_INDICES.map((index) => {
+			return (
+				<Image
+					src={Wave}
+					alt=""
+					class="w-full h-[calc(var(--wave-height)*100vh)]"
+					style={`--wave-height: ${Math.sin((index / NUM_WAVES) * Math.PI) + 0.5};`}
+				/>
+			);
+		})}
+	</div>
+	<p>Pls</p>
+</StarlightPage>

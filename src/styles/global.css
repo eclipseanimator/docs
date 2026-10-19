@@ -10,9 +10,15 @@
 	--font-mono: "Roboto Mono Variable", monospace;
 	--font-sans: "Roboto Flex Variable", sans-serif;
 
-	--color-accent-200: rgb(232, 180, 242);
-	--color-accent-600: rgb(198.6, 101.733, 213);
-	--color-accent-900: rgb(109.8, 50.533, 117);
+	--color-accent-100: rgb(232, 180, 242);
+	--color-accent-200: rgb(225.882, 162.588, 237.059);
+	--color-accent-300: rgb(219.765, 145.176, 232.118);
+	--color-accent-400: rgb(213.647, 127.765, 227.176);
+	--color-accent-500: rgb(207.529, 110.353, 222.235);
+	--color-accent-600: rgb(186.412, 94.706, 199.824);
+	--color-accent-700: rgb(160.294, 79.647, 171.588);
+	--color-accent-800: rgb(134.176, 64.588, 143.353);
+	--color-accent-900: rgb(108.059, 49.529, 115.118);
 	--color-accent-950: rgb(95, 42, 101);
 
 	--color-gray-100: rgb(236, 229, 243);
@@ -43,7 +49,7 @@
 		@apply font-sans;
 	}
 
-	h1,
+	/*h1,
 	h2,
 	h3,
 	h4,
@@ -51,7 +57,7 @@
 	h6,
 	.group-label {
 		@apply font-mono;
-	}
+	}*/
 
 	.hero {
 		grid-template-columns: 1fr !important;
@@ -67,6 +73,6 @@
 	}
 
 	.sl-link-button {
-		@apply px-3 py-2 rounded-lg flex-row-reverse;
+		@apply p-3 rounded-lg flex-row-reverse gap-2 font-medium transition-opacity hover:opacity-80 border-none;
 	}
 }

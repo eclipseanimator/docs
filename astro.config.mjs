@@ -5,9 +5,11 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import starlightAutoSidebar from "starlight-auto-sidebar";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://eclipseanimator.com",
+	site: "https://eclipseanimator.com",
 	integrations: [
 		starlight({
 			title: "Eclipse Animator",
@@ -54,6 +56,7 @@ export default defineConfig({
 			favicon: "favicon.png",
 			customCss: ["./src/styles/global.css"],
 		}),
+		icon(),
 	],
 
 	vite: {

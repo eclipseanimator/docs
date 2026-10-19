@@ -29,8 +29,8 @@ const colorSequence = ColorSequence.new {
     ColorSequenceKeypoint.new(1, Color3.fromHex("#E8B4F2"))
 }
 
-for _, step in { 200, 600, 900, 950 } do
-    const alpha = math.map(step, 200, 950, 1, 0)
+for _, step in { 100, 200, 300, 400,500,600, 700, 800,900, 950 } do
+    const alpha = math.map(step, 100, 950, 1, 0)
     const out = evalColorSequence(colorSequence, alpha)
     print(`--color-accent-{step}: rgb({string.format("%.3f, %.3f, %.3f", out.R * 255, out.G * 255, out.B * 255)});`)
 end
